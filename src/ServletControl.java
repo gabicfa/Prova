@@ -32,7 +32,19 @@ public class ServletControl extends HttpServlet {
 		int simbolo1 = usuario.getSimbolo1();
 		int simbolo2 = usuario.getSimbolo2();
 		int simbolo3 = usuario.getSimbolo3();
+		int moeda;
 		
+		if (simbolo1 == simbolo2 && simbolo1 == simbolo2){
+			moeda = usuario.getMoeda() + 10;
+			usuario.setMoeda(moeda);
+		}
+		else{
+			moeda = usuario.getMoeda() - 1;
+			usuario.setMoeda(moeda);
+		}
+		
+		
+		request.setAttribute("moeda", moeda);
 		request.setAttribute("simbolo1", simbolo1);
 		request.setAttribute("simbolo2", simbolo2);
 		request.setAttribute("simbolo3", simbolo3);

@@ -11,10 +11,12 @@
 <%
 	int s1 = (int)request.getAttribute("simbolo1");
 	int s2 = (int)request.getAttribute("simbolo2");
-	int s3 = (int)request.getAttribute("simbolo3");	
+	int s3 = (int)request.getAttribute("simbolo3");
+	int m = (int)request.getAttribute("moeda");
 	String nome = (String)request.getAttribute("nome");
 %>
-	Jogador: <%out.println(nome);%>
+	Jogador: <%out.println(nome);%> </br>
+	Moeda: <%out.println(m);%>
     <table class="table">
 	<tr>
 		<th>Simbolo1</th>

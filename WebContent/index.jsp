@@ -10,15 +10,10 @@
 <form action="servletControl.do" method="post">
 	Nome do Jogador:<br>
 	<input type="text" name="nome" id="nome"><br>
-	Moedas:<br>
-	<input type="text" name="moedas" readonly><br>
   
   <input type="submit" value="Alavanca">
 
 </form>
 
-	Siimbolo1:<input type="text" name="simbolo1" readonly value=""><br>
-	Simbolo2:<input type="text" name="simbolo2" readonly value=""><br>
-	Simbolo3:<input type="text" name="simbolo3" readonly value=""><br>
 </body>
 </html>
