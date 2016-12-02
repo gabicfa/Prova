@@ -34,7 +34,7 @@ public class ServletControl extends HttpServlet {
 		int simbolo3 = usuario.getSimbolo3();
 		int moeda;
 		
-		if (simbolo1 == simbolo2 && simbolo1 == simbolo2){
+		if (simbolo1 == simbolo2 && simbolo1 == simbolo3){
 			moeda = usuario.getMoeda() + 10;
 			usuario.setMoeda(moeda);
 		}
